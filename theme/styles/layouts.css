@@ -1,63 +1,135 @@
+/* GitKraken Celestial 2026 Design Tokens */
 :root {
-  --slidev-theme-primary: #5d8392;
+  /* Theme */
+  --slidev-theme-primary: #7900C9;
+
+  /* Backgrounds */
+  --bg-primary:   #1C1C1C;
+  --bg-secondary: #272727;
+  --bg-tertiary:  #3E3E3E;
+
+  /* Text */
+  --text-primary:      #FFFFFF;
+  --text-secondary:    #C9C9C9;
+  --text-tertiary:     #A4A4A4;
+  --text-link:         #EC7FFF;
+  --text-link-2:       #4CA8FF;
+  --text-link-hover:   #C170FF;
+  --text-link-2-hover: #6AB8FF;
+
+  /* Brand */
+  --brand-primary:            #7900C9;
+  --brand-secondary:          #2C30C0;
+  --brand-tertiary:           #01B7A1;
+  --brand-primary-highlight:  #B657FF;
+  --brand-secondary-highlight:#196FFF;
+  --brand-tertiary-highlight: #01FEE0;
+
+  /* Semantic */
+  --semantic-negative:        #CE5478;
+  --semantic-negative-light:  #D0809E;
+  --semantic-positive:        #097886;
+  --semantic-positive-light:  #AAE3EC;
+  --semantic-warning:         #FEDC00;
+  --semantic-warning-light:   #FFF96D;
+
+  /* Gradients */
+  --gradient-core:       linear-gradient(180deg, #9300F5 0%, #196FFF 100%);
+  --gradient-bright:     linear-gradient(180deg, #01FEE0 0%, #EC7FFF 100%);
+  --gradient-sunrise:    linear-gradient(180deg, #196FFF 0%, #CC00EA 100%);
+  --gradient-sunset:     linear-gradient(180deg, #A51FFF 0%, #FFF96D 100%);
+  --gradient-core-light: linear-gradient(180deg, #AB66FA 0%, #7795FE 100%);
 }
 
 .slidev-layout {
-/* background: #7900C9; */
-/* background: #7900C9; */
-background: black;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
 
-img {
-  border: #7900C9 solid 6px;
-}
+  img {
+    border: var(--brand-primary) solid 6px;
+  }
 
-a {
-border-color: #7900C9 !important;
-}
+  a {
+    color: var(--text-link) !important;
+    border-color: var(--brand-primary) !important;
+  }
 
-h1 {
-  @apply text-shadow-xl;
-  /* color: var(--slidev-theme-primary); */
-  /* color: #7900C9 !important; */
-  text-decoration: underline;
-  text-decoration-color: #7900C9;
-}
+  a:hover {
+    color: var(--text-link-hover) !important;
+  }
 
-h1 + p {
-  @apply -mt-2 opacity-50 mb-4;
-}
+  h1 {
+    @apply text-shadow-xl;
+    font-size: 49px;
+    font-weight: 800;
+    line-height: 61px;
+    text-decoration: underline;
+    text-decoration-color: var(--brand-primary);
+    letter-spacing: 0;
+  }
 
-p + h2, ul + h2, table + h2 {
-  @apply mt-10;
-}
+  h1 + p {
+    @apply -mt-2 opacity-50 mb-4;
+  }
 
-h1 {
-  @apply text-4xl mb-4 -ml-[0.05em];
-}
+  p + h2, ul + h2, table + h2 {
+    @apply mt-10;
+  }
 
-h2 {
-  @apply text-3xl;
-    /* opacity: 0.8; */
+  h1 {
+    @apply mb-4 -ml-[0.05em];
+  }
+
+  h2 {
+    font-size: 39px;
+    font-weight: 600;
+    line-height: 49px;
   }
 
   h3 {
-    @apply text-2xl;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
   }
 
   h4 {
-    @apply text-xl;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 32px;
   }
 
   h5 {
-    @apply text-base;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
   }
 
   h6 {
-    @apply text-sm pt-1 uppercase tracking-widest font-500 -ml-[0.05em];
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    padding-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    -ml-[0.05em]: true;
+    @apply pt-1 uppercase -ml-[0.05em];
   }
 
   h6:not(.opacity-100) {
     @apply opacity-40;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--text-secondary);
+  }
+
+  strong {
+    color: var(--text-primary);
+    font-weight: 600;
   }
 }
 
@@ -65,21 +137,27 @@ h2 {
 .slidev-layout.intro {
   @apply h-full grid;
 
-  
   h1 {
     backdrop-filter: blur(6px);
     color: inherit;
-    @apply text-6xl leading-20 bg-[rgba(0,0,0,0.5)] py-10 rounded-lg;
+    font-size: 49px;
+    line-height: 61px;
+    font-weight: 800;
+    @apply bg-[rgba(28,28,28,0.7)] py-10 rounded-lg;
   }
 }
 
 .slidev-layout.fact {
   @apply text-center grid h-full;
   h1 {
-    @apply text-8xl font-700;
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 1.125;
   }
   h1 + p {
-    @apply font-700 text-2xl;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 32px;
   }
 }
 
@@ -87,7 +165,9 @@ h2 {
   @apply text-center grid h-full;
 
   h1 {
-    @apply text-6xl font-700;
+    font-size: 49px;
+    font-weight: 800;
+    line-height: 61px;
   }
 }
 
@@ -101,7 +181,8 @@ h2 {
 
 .slidev-layout.section {
   h1 {
-    @apply text-6xl font-500 leading-20;
+    font-size: 49px;
+    font-weight: 500;
+    line-height: 61px;
   }
 }
-

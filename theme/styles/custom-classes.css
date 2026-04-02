@@ -1,6 +1,10 @@
+/* GitKraken gradient-bright: #01FEE0 → #EC7FFF */
 .gradient-text {
-  color: linear-gradient(135deg, #7900C9, #5627D8) !important;
-  /* animation: aurora 8s ease-in-out infinite alternate; */
+  background: linear-gradient(135deg, #01FEE0, #EC7FFF) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
 }
 
 @keyframes aurora {

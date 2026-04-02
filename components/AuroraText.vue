@@ -5,7 +5,7 @@ interface AuroraTextProps {
   speed?: number;
 }
 const props = withDefaults(defineProps<AuroraTextProps>(), {
-  colors: () => ["#7900C9", "#5627D8", "#7900C9", "#0088FF"],
+  colors: () => ["#01FEE0", "#EC7FFF", "#01FEE0", "#B657FF"],
   speed: 1,
 });
 const gradientStyle = {

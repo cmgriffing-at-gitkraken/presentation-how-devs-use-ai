@@ -23,10 +23,10 @@
     "defaults": {
       "fonts": {
         "mono": "PT Mono",
-        "sans": "PT Serif",
-        "serif": "PT Serif",
-        "italic": true,
-        "weights": "400, 700"
+        "sans": "Inter",
+        "serif": "Inter",
+        "italic": false,
+        "weights": "400, 500, 600, 700, 800"
       }
     }
   },

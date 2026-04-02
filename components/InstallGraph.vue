@@ -49,17 +49,17 @@ const formatInstalls = (value) => {
 const createChart = () => {
   const ctx = chartCanvas.value.getContext("2d");
 
-  // Create gradient for the line
+  // Create gradient for the line (GitKraken: purple → blue → aqua)
   const gradient = ctx.createLinearGradient(0, 0, 0, 400);
-  gradient.addColorStop(0, "#60a5fa");
-  gradient.addColorStop(0.5, "#a855f7");
-  gradient.addColorStop(1, "#06b6d4");
+  gradient.addColorStop(0, "#9300F5");
+  gradient.addColorStop(0.5, "#196FFF");
+  gradient.addColorStop(1, "#01DFC5");
 
   // Create gradient for the area under the line
   const areaGradient = ctx.createLinearGradient(0, 0, 0, 400);
-  areaGradient.addColorStop(0, "rgba(96, 165, 250, 0.3)");
-  areaGradient.addColorStop(0.5, "rgba(168, 85, 247, 0.2)");
-  areaGradient.addColorStop(1, "rgba(6, 182, 212, 0.1)");
+  areaGradient.addColorStop(0, "rgba(147, 0, 245, 0.3)");
+  areaGradient.addColorStop(0.5, "rgba(25, 111, 255, 0.2)");
+  areaGradient.addColorStop(1, "rgba(1, 223, 197, 0.1)");
 
   chartInstance = new Chart(ctx, {
     type: "line",
@@ -72,14 +72,14 @@ const createChart = () => {
           borderColor: gradient,
           backgroundColor: areaGradient,
           borderWidth: 4,
-          pointBackgroundColor: "#60a5fa",
-          pointBorderColor: "#1f2937",
+          pointBackgroundColor: "#B657FF",
+          pointBorderColor: "#1C1C1C",
           pointBorderWidth: 3,
           pointRadius: 8,
           pointHoverRadius: 12,
           pointHoverBorderWidth: 3,
-          pointHoverBorderColor: "#60a5fa",
-          pointHoverBackgroundColor: "#1f2937",
+          pointHoverBorderColor: "#B657FF",
+          pointHoverBackgroundColor: "#1C1C1C",
           fill: true,
           tension: 0.4,
         },
@@ -93,10 +93,10 @@ const createChart = () => {
           display: false,
         },
         tooltip: {
-          backgroundColor: "#1f2937",
-          titleColor: "#60a5fa",
-          bodyColor: "#f9fafb",
-          borderColor: "#374151",
+          backgroundColor: "#272727",
+          titleColor: "#B657FF",
+          bodyColor: "#FFFFFF",
+          borderColor: "#3E3E3E",
           borderWidth: 1,
           cornerRadius: 12,
           displayColors: false,
@@ -110,12 +110,12 @@ const createChart = () => {
       scales: {
         x: {
           grid: {
-            color: "rgba(55, 65, 81, 0.3)",
+            color: "rgba(62, 62, 62, 0.5)",
             drawBorder: true,
-            borderColor: "#4b5563",
+            borderColor: "#3E3E3E",
           },
           ticks: {
-            color: "#9ca3af",
+            color: "#C9C9C9",
             font: {
               size: 13,
             },
@@ -123,12 +123,12 @@ const createChart = () => {
         },
         y: {
           grid: {
-            color: "rgba(55, 65, 81, 0.3)",
+            color: "rgba(62, 62, 62, 0.5)",
             drawBorder: true,
-            borderColor: "#4b5563",
+            borderColor: "#3E3E3E",
           },
           ticks: {
-            color: "#9ca3af",
+            color: "#C9C9C9",
             font: {
               size: 13,
             },
@@ -162,9 +162,9 @@ onUnmounted(() => {
   width: 100%;
   height: 400px;
   padding: 2rem;
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
-  border-radius: 1rem;
-  border: 1px solid #334155;
+  background: linear-gradient(135deg, #1C1C1C 0%, #272727 50%, #1C1C1C 100%);
+  border-radius: 10px;
+  border: 1px solid #3E3E3E;
 }
 
 .chart-header {
@@ -175,7 +175,8 @@ onUnmounted(() => {
 .chart-title {
   font-size: 1.875rem;
   font-weight: 700;
-  background: linear-gradient(90deg, #60a5fa 0%, #a855f7 50%, #06b6d4 100%);
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(90deg, #9300F5 0%, #B657FF 50%, #196FFF 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -185,7 +186,7 @@ onUnmounted(() => {
 .accent-bar {
   height: 4px;
   width: 6rem;
-  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  background: linear-gradient(90deg, #7900C9, #196FFF);
   margin: 0 auto;
   border-radius: 2px;
 }
@@ -200,11 +201,11 @@ onUnmounted(() => {
   text-align: center;
   font-size: 0.875rem;
   font-weight: 500;
-  color: #94a3b8;
+  color: #C9C9C9;
 }
 
 .gradient-text {
-  background: linear-gradient(90deg, #60a5fa, #a855f7);
+  background: linear-gradient(90deg, #01FEE0, #EC7FFF);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
