@@ -1,31 +1,21 @@
 ---
 # try also 'default' to start simple
 theme: ./theme
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
 background: /brand-4.png
-# some information about your slides (markdown enabled)
-title: Welcome to Slidev
+title: How Devs Use AI
 info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
-# apply UnoCSS classes to the current slide
+  ## How Devs Use AI
+  Based on GitKraken's "The AI Multiplier Effect" — 2,172 developer-weeks of data.
 class: text-center
-# https://sli.dev/features/drawing
 drawings:
   persist: false
-# slide transition: https://sli.dev/guide/animations.html#slide-transitions
 transition: slide-left
-# enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
 ---
 
+# How Devs Use AI
 
-# The Path to 40 Million Installs
-
-<h2 class="text-right">The History of GitLens</h2>
+<h2 class="text-right">What the Data Actually Says</h2>
 
 ---
 layout: image-right
@@ -42,199 +32,187 @@ image: /self-portrait.jpg
 
 <img src="./images/qr-code.png" class="w-60 h-auto mx-auto my-16" />
 
-
----
-layout: image-left
-image: /eric-amodio.jpg
----
-
-<h1 class="text-6xl!">Eric Amodio</h1>
-
-<div class="flex flex-col gap-12 mt-12">
-
-## Author of GitLens
-
-## CTO at GitKraken
-
-</div>
-
-<div class="flex mt-28">
-
-<div class="flex flex-col items-center justify-center w-1/2">
-  <h3 class="font-bold text-[5rem]! mb-4">25+</h3>
-  <p>Years experience</p>
-</div>
-
-<div class="flex flex-col items-center justify-center w-1/2">
-  <h3 class="font-bold text-[5rem]! mb-4">15+</h3>
-  <p>Years in Leadership</p>
-</div>
-
-</div>
-
 ---
 layout: cover
 background: /brand-1.png
 ---
 
-# What is GitLens?
-
----
-layout: cover
-background: /gitlens-example.png
----
-
----
-layout: cover
-background: /brand-3.png
----
-
-# Where We Are Now...
+# Why This Talk?
 
 ---
 
-<div class="flex flex-col items-center justify-center h-full w-full">
+# The Study
 
-<count-up :end-val="44109359" :duration="5" :delay="0.5" class="text-[10rem]" />
+GitKraken, GitClear, and GitKraken Insights analyzed **2,172 developer-weeks** across teams using GitHub Copilot, Cursor, and Claude Code.
 
-# 44,063,971 just two days ago (+40k)
+<div class="flex flex-col gap-6 mt-12 text-xl">
+
+- Real usage data, not surveys
+- Same devs tracked over time
+- Cross-team, cross-tool
 
 </div>
 
----
-layout: cover
-background: /extension-marketplace.png
----
-
----
-layout: cover
-background: /extensions-popular.png
----
-
-
----
-
-<install-graph />
+<p class="mt-12 text-2xl font-bold">This is not a product pitch.</p>
 
 ---
 layout: cover
 background: /brand-2.png
 ---
 
-# Where We Started...
+# "AI Makes Devs 10x More Productive"
+
+## The Number Everyone Quotes Is Wrong
+
+---
+
+# The 10x Claim
+
+<div class="flex flex-col gap-8 mt-8 text-xl">
+
+<div>
+
+The data **does** show power users with:
+- **14x** more commits
+- **15x** more test code
+
+</div>
+
+<div class="mt-4">
+
+**But here's the problem:**
+
+That number is almost entirely misleading.
+
+</div>
+
+</div>
+
+<p class="mt-12 text-2xl font-bold">The real number is smaller — and honestly, more impressive.</p>
 
 ---
 layout: cover
-background: /early-eric.png
+background: /brand-3.png
 ---
 
----
-
-<h1 class="text-6xl! mb-20!">VS Code Released</h1>
-
-# April 29, 2015:
-
-The first preview version of VS Code was released to the public. 
-
-# November 18, 2015:
-
-The source code for Visual Studio Code was released under the MIT License, and extension support was announced. 
-
-# April 14, 2016:
-
-The final version of Visual Studio Code graduated from its public preview stage and was released to the public. 
+# Who Actually Uses AI Heavily?
 
 ---
-layout: cover
-background: /no-subversion.png
----
+
+# It's Not Random
+
+AI power users cluster around specific profiles:
+
+<div class="flex flex-col gap-6 mt-8 text-xl">
+
+- **Senior engineers** — already touch more of the codebase
+- **Startup devs** — less process friction, nearly **2x** output vs. enterprise
+- **Devs already in flow states** — AI is a companion to high output, maybe not the cause
+
+</div>
+
+<p class="mt-12 text-2xl font-bold">AI amplifies what's already there. It doesn't create 10x engineers from scratch.</p>
 
 ---
 layout: cover
-background: /first-commit.png
+background: /brand-1.png
 ---
 
-# August 8th, 2016
-
-
----
-layout: cover
-background: /codelens.png
----
+# The Real Number
 
 ---
 
-<install-graph />
+# 25% More Productive
 
----
-layout: cover
-background: /gitlens-hanselman-tweet.png
----
+Researchers compared devs against **themselves** — same person, same week, one year apart.
 
----
-layout: cover
-background: /vscode-contributions.png
----
+<div class="flex gap-12 mt-12 justify-center">
 
-# Contributing to VS Code
+<div class="flex flex-col items-center justify-center">
+  <h3 class="font-bold text-[5rem]! mb-4">~25%</h3>
+  <p>productivity gain year-over-year</p>
+</div>
 
----
-layout: cover
-background: /joining-microsoft.png
----
+<div class="flex flex-col items-center justify-center">
+  <h3 class="font-bold text-[5rem]! mb-4">4x</h3>
+  <p>more test code written</p>
+</div>
 
-# Joining Microsoft
+</div>
+
+<p class="mt-12 text-xl">AI-assisted PRs also need **less review time** per unit of output.</p>
+
+<p class="mt-6 text-2xl font-bold">25% is real. It compounds. That's actually a big deal.</p>
 
 ---
 layout: cover
-background: /gitlens-keynote.png
+background: /brand-2.png
 ---
+
+# The Catch
+
+## What AI Costs You
+
+---
+
+# The Hidden Trade-offs
+
+<div class="flex flex-col gap-6 mt-8 text-xl">
+
+- **9x more code churn** — code written then rewritten within 2 weeks
+- **4x more copy-paste duplication** — AI still struggles with DRY principles
+- The risk: velocity looks great today, then the codebase quietly becomes harder to change
+
+</div>
+
+<p class="mt-10 text-xl">Good news: the data shows devs <em>are</em> catching and fixing these issues — but only if they're looking.</p>
 
 ---
 layout: cover
-background: /commit-graph.png
+background: /brand-3.png
 ---
 
-# Acquired by GitKraken
+# What To Actually Measure
 
 ---
 
-<install-graph />
+# Track the Trade-offs, Not Just Output
 
----
-layout: cover
-background: /contributors.png
----
+<div class="flex flex-col gap-6 mt-8 text-xl">
 
-# Contributors
+**Productivity**
+- PR cycle time, deployment frequency
 
----
-layout: cover
-background: /team.png
----
+**Quality**
+- Code churn rate, duplication, post-merge defects
 
-# The Team at GitKraken
+**Efficiency ratio**
+- Output increase vs. review time increase
+
+</div>
+
+<p class="mt-10 text-2xl font-bold">You can't manage what you don't measure.</p>
 
 ---
 layout: cover
 background: /brand-4.png
 ---
 
-# Where Are We Going?
+# Force Multiplier, Not Magic
 
 ---
-layout: cover
-background: /commit-composer.webp
----
 
-# Commit Composer
+# The Bottom Line
 
----
-layout: cover
-background: /arms.png
----
+<div class="flex flex-col gap-6 mt-8 text-xl">
 
-# Different Companies, <br /> Same Team
+- AI coding tools are **real** — 25% productivity lift, better test coverage, smoother reviews
+- They're **force multipliers** — they amplify your team's existing strengths *and* weaknesses
+- The teams that win aren't the ones who adopt fastest
+
+</div>
+
+<p class="mt-12 text-2xl font-bold italic">"The question isn't whether AI makes devs more productive. It does. The question is whether you're measuring the right things to make it last."</p>
 
 ---
 layout: cover
