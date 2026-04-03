@@ -12,9 +12,7 @@ transition: slide-left
 mdc: true
 ---
 
-# How Devs Use AI
-
-<h2 class="text-right">What the Data Actually Says</h2>
+# How Devs Use AI <div class="text-sm">(What the Data Actually Says)</div>
 
 ---
 layout: image-right
@@ -41,46 +39,56 @@ layout: fact
 ---
 
 # 2,172
-developer-weeks of real usage data
+developer-weeks of usage data
 
 ---
 layout: statement
 ---
 
-# This is not a product pitch.
+# This is a data talk.
 
 ---
 layout: section
 ---
 
-###### The Hook
-# "The Number Everyone Quotes Is Wrong"
+###### The Problem
+# The Number You've Heard Is Wrong
 
 ---
-layout: statement
+layout: fact
 ---
 
-# "AI makes devs 10x more productive"
+# <span style="text-decoration: line-through">10x</span>
+"AI makes devs 10x more productive"
 
 ---
 layout: fact
 ---
 
 # 14x
-more commits — for power users
+more commits (for power users)
 
 ---
 layout: fact
 ---
 
 # 15x
-more test code — for power users
+more test code (for power users)
 
 ---
 layout: statement
 ---
 
-# But that number is almost entirely misleading.
+# Those numbers are misleading, but why?
+
+---
+layout: statement
+---
+
+# 95% Adoption Rate
+According to survey
+
+https://newsletter.pragmaticengineer.com/p/ai-tooling-2026
 
 ---
 layout: section
@@ -88,6 +96,12 @@ layout: section
 
 ###### Who's Actually Using It?
 # Who Actually Uses AI Heavily?
+
+---
+layout: cover
+background: /ai-activity-gap.png
+---
+
 
 ---
 layout: fact
@@ -100,8 +114,8 @@ already touch more of the codebase
 layout: fact
 ---
 
-# 2x
-output — startup devs vs. enterprise
+# 2x Output
+startup devs vs. enterprise
 
 ---
 layout: statement
@@ -109,7 +123,7 @@ layout: statement
 
 # AI amplifies what's already there.
 
-It doesn't create 10x engineers from scratch.
+<!-- It doesn't create 10x engineers from scratch. -->
 
 ---
 layout: section
@@ -122,15 +136,15 @@ layout: section
 layout: fact
 ---
 
-# ~25%
-more productive — comparing devs against themselves, one year apart
+# ~25% more productive
+comparing devs against themselves, one year apart
 
 ---
 layout: fact
 ---
 
-# 4x
-more test code — friction drops, so devs actually write tests
+# 4x more test code
+friction drops, so devs actually write tests
 
 ---
 layout: statement
@@ -138,7 +152,7 @@ layout: statement
 
 # 25% is real. It compounds.
 
-That's actually a big deal.
+<!-- That's a big deal. Year over year, this adds up. -->
 
 ---
 layout: section
@@ -151,31 +165,31 @@ layout: section
 layout: fact
 ---
 
-# 9x
-more code churn — code rewritten within 2 weeks
+# 9x more code churn
+code rewritten within 2 weeks
 
 ---
 layout: fact
 ---
 
-# 4x
-more copy-paste duplication — AI still struggles with DRY
+# 4x more copy-paste duplication
+AI still struggles with DRY
 
 ---
 layout: statement
 ---
 
-# Velocity looks great today.
-
-Then the codebase quietly becomes harder to change.
+# Velocity climbs.
+The codebase gets harder to change.
 
 ---
 layout: statement
 ---
 
-# Good news: devs are catching it.
+# Devs who review AI output catch it.
+Most don't look.
 
-But only if they're looking.
+<!-- Good news: devs are catching it. But only if they're looking. -->
 
 ---
 layout: section
@@ -221,7 +235,7 @@ vs. review time increase
 
 </div>
 
-<p class="mt-12 text-xl font-bold">You can't manage what you don't measure.</p>
+<p class="mt-12 text-xl font-bold">Track all three, not just velocity.</p>
 
 ---
 layout: section
@@ -230,19 +244,18 @@ layout: section
 ###### The Bottom Line
 # Force Multiplier, Not Magic
 
----
-layout: statement
----
+AI tools amplify your team's existing strengths and weaknesses.
 
-# They amplify your team's existing strengths *and* weaknesses.
 
 ---
 layout: quote
 ---
 
-# "The question isn't whether AI makes devs more productive. It does."
+# AI does make devs more productive
 
-The question is whether you're measuring the right things to make it last.
+Whether that lasts depends on what you measure.
+
+<!-- The question isn't whether AI makes devs more productive. It does. The question is whether you're measuring the right things to make it last. -->
 
 ---
 layout: cover
