@@ -138,12 +138,10 @@
   @apply h-full grid;
 
   h1 {
-    backdrop-filter: blur(6px);
     color: inherit;
     font-size: 49px;
     line-height: 61px;
     font-weight: 800;
-    @apply bg-[rgba(28,28,28,0.7)] py-10 rounded-lg;
   }
 }
 

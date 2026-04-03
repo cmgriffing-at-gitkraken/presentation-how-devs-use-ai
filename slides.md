@@ -12,7 +12,8 @@ transition: slide-left
 mdc: true
 ---
 
-# How Devs Use AI <div class="text-sm">(What the Data Actually Says)</div>
+# How Devs Use AI
+What the Data Actually Says
 
 ---
 layout: image-right
@@ -29,7 +30,8 @@ image: /self-portrait.jpg
 <img src="./images/qr-code.png" class="w-60 h-auto mx-auto my-16" />
 
 ---
-layout: section
+layout: cover
+background: /brand-3.png
 ---
 
 # Why This Talk?
@@ -48,7 +50,8 @@ layout: statement
 # This is a data talk.
 
 ---
-layout: section
+layout: cover
+background: /brand-4.png
 ---
 
 ###### The Problem
@@ -91,15 +94,16 @@ According to survey
 https://newsletter.pragmaticengineer.com/p/ai-tooling-2026
 
 ---
-layout: section
+layout: cover
+background: /brand-5.png
 ---
 
 ###### Who's Actually Using It?
 # Who Actually Uses AI Heavily?
 
 ---
-layout: cover
-background: /ai-activity-gap.png
+layout: image
+image: /ai-activity-gap.png
 ---
 
 
@@ -126,7 +130,8 @@ layout: statement
 <!-- It doesn't create 10x engineers from scratch. -->
 
 ---
-layout: section
+layout: cover
+background: /brand-1.png
 ---
 
 ###### The Data
@@ -155,7 +160,8 @@ layout: statement
 <!-- That's a big deal. Year over year, this adds up. -->
 
 ---
-layout: section
+layout: cover
+background: /brand-2.png
 ---
 
 ###### But...
@@ -192,7 +198,8 @@ Most don't look.
 <!-- Good news: devs are catching it. But only if they're looking. -->
 
 ---
-layout: section
+layout: cover
+background: /brand-3.png
 ---
 
 ###### Takeaway
@@ -202,20 +209,32 @@ layout: section
 
 # Track the Trade-offs
 
-<div class="grid grid-cols-3 gap-8 mt-12 text-center">
+<div class="grid grid-cols-3 gap-5 mt-12 text-center">
 
-<div>
+<div class="rounded-xl overflow-hidden bg-[rgba(40,40,40,0.8)]">
+<div class="h-1.5 bg-[#B657FF]"></div>
+<div class="p-5">
 
-## Productivity
+#### Productivity
+
+<div class="text-[#A4A4A4] text-sm mt-3 leading-7">
+
 PR cycle time
 
 Deployment frequency
 
 </div>
+</div>
+</div>
 
-<div>
+<div class="rounded-xl overflow-hidden bg-[rgba(40,40,40,0.8)]">
+<div class="h-1.5 bg-[#196FFF]"></div>
+<div class="p-5">
 
-## Quality
+#### Quality
+
+<div class="text-[#A4A4A4] text-sm mt-3 leading-7">
+
 Code churn rate
 
 Duplication
@@ -223,22 +242,34 @@ Duplication
 Post-merge defects
 
 </div>
+</div>
+</div>
 
-<div>
+<div class="rounded-xl overflow-hidden bg-[rgba(40,40,40,0.8)]">
+<div class="h-1.5 bg-[#01FEE0]"></div>
+<div class="p-5">
 
-## Efficiency
+#### Efficiency
+
+<div class="text-[#A4A4A4] text-sm mt-3 leading-7">
+
 Output increase
 
 vs. review time increase
 
 </div>
+</div>
+</div>
 
 </div>
 
-<p class="mt-12 text-xl font-bold">Track all three, not just velocity.</p>
+<div class="mt-4 pt-6 text-center">
+<p class="gradient-text text-4xl! font-bold m-0">Track all three, not just velocity.</p>
+</div>
 
 ---
-layout: section
+layout: cover
+background: /brand-4.png
 ---
 
 ###### The Bottom Line
