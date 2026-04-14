@@ -1,11 +1,12 @@
 {
-  "name": "presentation-the-path-to-40-million-installs-the-history-of-gitlens",
+  "name": "presentation-how-devs-use-ai",
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "slidev build -o docs --base /presentation-the-path-to-40-million-installs-the-history-of-gitlens/",
+    "build": "slidev build -o dist --base /presentation-how-devs-use-ai/",
     "dev": "slidev --open",
-    "export": "slidev export"
+    "export": "slidev export",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@slidev/cli": "^52.2.4",
@@ -14,5 +15,8 @@
     "chart.js": "^4.5.0",
     "countup.js": "^2.9.0",
     "vue": "^3.5.21"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
